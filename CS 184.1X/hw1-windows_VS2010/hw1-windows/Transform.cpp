@@ -28,8 +28,8 @@ mat3 Transform::rotate(const float degrees, const vec3& axis) {
 void Transform::left(float degrees, vec3& eye, vec3& up) {
   // YOUR CODE FOR HW1 HERE
 	vec3 axis = glm::normalize(up);
-	eye = rotate(degrees, axis) * eye;
-	up = rotate(degrees, axis) * up;
+	eye = rotate(-degrees, axis) * eye;
+	up = rotate(-degrees, axis) * up;
 	printf("Coordinates: %.2f, %.2f, %.2f; distance: %.2f\n", eye.x, eye.y, eye.z, sqrt(pow(eye.x, 2) + pow(eye.y, 2) + pow(eye.z, 2)));
 }
 
