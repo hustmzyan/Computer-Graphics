@@ -1,0 +1,55 @@
+﻿生成启动时间为 2018/9/29 11:30:27。
+     1>项目“c:\Users\25240\documents\visual studio 2010\Projects\Graphics\Graphics\Graphics.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\Graphics.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Graphics.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Graphics.cpp GraphicsDoc.cpp GraphicsView.cpp MainFrm.cpp
+         GraphicsView.cpp
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(179): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(180): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(183): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(183): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(184): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(184): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(188): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(188): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(188): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(188): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(191): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(197): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(197): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(197): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(197): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>c:\users\25240\documents\visual studio 2010\projects\graphics\graphics\graphicsview.cpp(200): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+         正在生成代码...
+         正在跳过...(未检测到相关更改)
+         MainFrm.cpp
+         GraphicsDoc.cpp
+         Graphics.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\Graphics.res" Graphics.rc 
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\25240\documents\visual studio 2010\Projects\Graphics\Debug\Graphics.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\Graphics.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\25240\documents\visual studio 2010\Projects\Graphics\Debug\Graphics.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\25240\documents\visual studio 2010\Projects\Graphics\Debug\Graphics.lib" /MACHINE:X86 Debug\Graphics.res
+         Debug\Graphics.exe.embed.manifest.res
+         Debug\Graphics.obj
+         Debug\GraphicsDoc.obj
+         Debug\GraphicsView.obj
+         Debug\MainFrm.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Graphics.exe.embed.manifest" /manifest Debug\Graphics.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         Graphics.vcxproj -> c:\users\25240\documents\visual studio 2010\Projects\Graphics\Debug\Graphics.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\Graphics.unsuccessfulbuild”。
+         正在对“Debug\Graphics.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“c:\Users\25240\documents\visual studio 2010\Projects\Graphics\Graphics\Graphics.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.00
