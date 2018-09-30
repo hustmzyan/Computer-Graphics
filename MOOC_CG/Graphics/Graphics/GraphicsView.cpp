@@ -41,8 +41,9 @@ END_MESSAGE_MAP()
 CGraphicsView::CGraphicsView()
 {
 	// TODO: 在此处添加构造代码
-	col_black = (0,0,0);
-	col_red = (1,0,0);
+	col_black = RGB(0,0,0);
+	col_red = RGB(255,0,0);
+	col_blue = RGB(0, 0, 255);
 }
 
 CGraphicsView::~CGraphicsView()
@@ -138,6 +139,7 @@ void CGraphicsView::OnDDALine()
 {
 	// TODO: 在此添加命令处理程序代码
 	flag = 1;
+	Invalidate();
 }
 
 
@@ -165,6 +167,9 @@ void CGraphicsView::OnLButtonUp(UINT nFlags, CPoint point)
 		break;
 	case 2:
 		Midline(p1_x, p1_y, p2_x, p2_y);
+		break;
+	case 3:
+		Bresenhamline(p1_x, p1_y, p2_x, p2_y);
 		break;
 	}
 }
@@ -207,6 +212,7 @@ void CGraphicsView::OnMidline()
 {
 	// TODO: 在此添加命令处理程序代码
 	flag = 2; 
+	Invalidate();
 }
 
 
@@ -279,4 +285,53 @@ void CGraphicsView::OnBresenham()
 {
 	// TODO: 在此添加命令处理程序代码
 	flag = 3;
+	Invalidate();
+}
+
+
+void CGraphicsView::Bresenhamline(int B_x, int B_y, int E_x, int E_y)
+{
+	int dx = abs(E_x - B_x);
+	int dy = abs(E_y - B_y);
+	int x = B_x;
+	int y = B_y;
+	int stepX = 1;
+	int stepY = 1;
+	CDC *pDC = GetDC();
+	pDC->TextOut(450, 18, _T("Bresenham画线法成功了！"));
+	if(B_x > E_x)
+		stepX = -1;
+	if(B_y > E_y)
+		stepY = -1;
+
+	if(dx > dy)
+	{
+		int e = dy * 2 - dx;
+		for(int i = 0; i <= dx; i++)
+		{
+			pDC->SetPixel(x, y, col_blue);
+			x += stepX;
+			e += dy;
+			if(e >= 0)
+			{
+				y += stepY;
+				e -= dx;
+			}
+		}
+	}
+	else
+	{
+		int e = 2 * dx - dy;
+		for(int i = 0; i <= dy; i++)
+		{
+			pDC->SetPixel(x, y, col_blue);
+			y += stepY;
+			e += dx;
+			if(e >= 0)
+			{
+				x += stepX;
+				e -= dy;
+			}
+		}
+	}
 }

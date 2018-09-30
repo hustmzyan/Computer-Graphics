@@ -20,8 +20,10 @@ public:
 	int p1_x, p1_y, p2_x, p2_y, flag;
 	COLORREF col_black;
 	COLORREF col_red;
+	COLORREF col_blue;
 	void DDAline(int B_x, int B_y, int E_x, int E_y);
 	void Midline(int B_x, int B_y, int E_x, int E_y);
+	void Bresenhamline(int B_x, int B_y, int E_x, int E_y);
 // 重写
 public:
 	virtual void OnDraw(CDC* pDC);  // 重写以绘制该视图
